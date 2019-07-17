@@ -6,7 +6,7 @@ def map(array)
   return array
 end
 
-map([1, 2, 3, -9]){|n| n * 2}
+map  ([1, 2, 3, -9])  {|n| n * 2}
 
 def reduce(array, memo=0)
   if array[0] === false 
