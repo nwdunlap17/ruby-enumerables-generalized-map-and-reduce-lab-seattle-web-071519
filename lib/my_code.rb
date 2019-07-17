@@ -6,6 +6,8 @@ def map(array)
   return array
 end
 
+map([1, 2, 3, -9]){|n| n * 2}
+
 def reduce(array, memo=0)
   if array[0] === false 
     memo = false 
@@ -15,9 +17,3 @@ def reduce(array, memo=0)
   end
   return memo
 end
-
-source_array = [ false, nil, nil, nil, true]
-reduce(source_array){
-  |memo, n| memo || n
-  p memo || n
-}
